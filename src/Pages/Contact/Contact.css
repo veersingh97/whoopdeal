@@ -1,0 +1,79 @@
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.meet-us {
+  padding: 3rem;
+}
+.meet-us h2,
+.form h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.meet-us p {
+  font-size: 1.3rem;
+}
+.phone,
+.office,
+.email {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+.phone svg,
+.office svg,
+.email svg {
+  color: #f7444e;
+}
+.phone h3,
+.office h3,
+.email h3 {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.form {
+  padding: 3rem;
+}
+.form label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: block;
+  margin-top: 1rem;
+}
+.form input {
+  background-color: #e9d7d7;
+  color: white;
+  border: none;
+  padding: 1rem 1rem;
+  width: 100%;
+  border-radius: 10px;
+}
+.top-margin {
+  margin-top: 1rem;
+}
+.maps {
+  border: none;
+}
+
+@media (max-width: 49em) {
+  .contact-section {
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 43em) {
+  .contact-section {
+    grid-template-columns: 1fr 1fr;
+    gap:3rem
+  }
+}
+@media (max-width: 30em) {
+  .contact-section {
+    grid-template-columns: 1fr ;
+    gap:1rem
+  }
+}
+

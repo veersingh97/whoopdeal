@@ -1,0 +1,142 @@
+.cart-section {
+  margin-top: 3rem;
+  padding: 3rem;
+}
+.cart-content {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.cart-products,
+.cart-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 11rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.cart-products {
+  margin-top: 2rem;
+}
+.cart-img {
+  width: 7rem;
+}
+.cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cart-item p {
+  font-size: 1rem;
+  font-weight: 900;
+}
+.price,
+.subtotal,
+.remove-btn,
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+/* .add-to-cart p{
+    margin: 0rem 1.4rem;
+    font-weight: 400;
+    font-size: 2rem;
+} */
+
+.amount-quantity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  color: #f7444e;
+  cursor: pointer;
+}
+.clear-continue {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.clear {
+  color: white;
+  font-weight: 600;
+}
+.shop {
+  background-color: #002c3e;
+  color: white;
+  font-weight: 600;
+}
+.shop:hover {
+  color: #002c3e;
+}
+.clear:hover {
+  color: #f7444e;
+}
+.cart-margin {
+  margin-bottom: 2rem;
+}
+
+.empty-cart {
+  text-align: center;
+  margin: 5rem auto;
+}
+.total-amount {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.total-amount p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.total-amount h3 {
+  font-weight: 600;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+}
+.total-sub,
+.shipping-fee,
+.payable {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+/* .line{
+  color: black;
+  background-color: black;
+  width: 100%;
+  padding: .5rem;
+} */
+@media (max-width: 43em) {
+  .cart-products,
+  .cart-content {
+    gap: 9rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .cart-products,
+  .cart-content {
+    gap: 5rem;
+  }
+  .mobile-btn{
+    font-weight: 500;
+    padding: .8rem 1.6rem;
+  }
+}
+@media (max-width: 30em) {
+  .mobile-display{
+    display: none;
+
+  }
+}

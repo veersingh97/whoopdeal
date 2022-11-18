@@ -1,0 +1,17 @@
+.products-section{
+    margin-top: 3rem;
+    padding: 3rem;
+}
+
+.products-grid{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    gap: 3rem;
+}
+
+@media (max-width: 31em) {
+    .products-grid{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+  }

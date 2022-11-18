@@ -1,0 +1,35 @@
+.sorting-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-list-icon {
+  cursor: pointer;
+}
+.grid-icon {
+  margin-right: 1rem;
+}
+.grid-icon.active {
+  margin-right: 1rem;
+  background-color: black;
+  color: white;
+}
+.sort-selection {
+  background-color: #002c3e;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-selection option {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.sort-selection option:hover {
+  background-color: #045778;
+}

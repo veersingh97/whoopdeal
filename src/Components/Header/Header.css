@@ -1,0 +1,118 @@
+.header-section{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(232, 232, 232);
+    padding: 2rem 4rem;
+    font-weight: 600;
+}
+
+.logo{
+    height: 3rem;
+}
+.navbar-text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+.navbar-label{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-label:hover{
+   color: #F7444E;
+}
+.btn{
+    padding: 1rem 2rem;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    background-color: #F7444E;
+    border: none;
+    font-family: inherit;
+    border-radius: 7px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #F7444E;
+    background-color: transparent;
+}
+svg{
+    width: 3rem;
+    height: 3rem;
+}
+.cart-trolley{
+    position: relative;
+}
+.cart-total{
+    position: absolute;
+    background-color: #F7444E;
+    border-radius: 50%;
+    top:-140%;
+    width:2rem;
+    height:2rem;
+    right: -65%;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+.bars{
+    display: none;
+}
+@media(max-width:38em){
+    body{
+        overflow-X: hidden;
+    }
+    html{
+        font-size: 47%;
+    }
+    .header-section{
+        padding: 2rem 2rem;
+        background-color:rgb(232, 232, 232)
+    }
+    .bars{
+        display: inline-block;
+    }
+    .navbar-text {
+        visibility: hidden;
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 8%;
+        left: 0;
+        background-color: rgb(232, 232, 232);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        overflow: hidden;
+        color: black;
+        transition: all 0.3s linear;
+      }
+      .navbar-text.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0%);
+        transform-origin: right;
+        transition: all 0.3s linear;
+        z-index: 999;
+        color: rgb(255, 255, 255);
+      }
+      .cart-total{
+        height: 1.5rem;
+        width: 1.5rem;
+        top:-85%;
+        right:-30%;
+        font-size: 1rem;
+      }
+      .bars-mobile{
+        width: 3rem;
+        height: 3rem;
+      }
+}

@@ -1,0 +1,33 @@
+.login-section {
+    width: 100%;
+  }
+  
+  .login-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5rem;
+    margin: auto 10rem;
+  }
+  .login-title {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+  }
+  .label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+  }
+  .input {
+    margin-bottom: 1rem;
+    padding: 1rem 1.4rem;
+  }
+
+  @media (max-width: 30em) {
+    .login-text {
+       
+        padding: 3rem;
+        margin: auto 5rem;
+      }
+  }
