@@ -3,8 +3,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+ok bitch have a nice day
 
-In the project directory, you can run:
+In the project directory, you can run:njbugvuvuhvybyt ygvyt
 
 ### `npm start`
 

@@ -35,7 +35,7 @@ const initialState = {
   },
   cart: getLocalCartData(),
   totalItem: 0,
-  shippingFee: 0,
+  shippingFee: 0 ,
   totalAmount: "",
 };
 

@@ -1,4 +1,5 @@
 const ProductReducer = (state, action) => {
+
   switch (action.type) {
     case "SET_LOADING":
       return {
@@ -206,7 +207,6 @@ const ProductReducer = (state, action) => {
       return {
         ...state,
         cart: updatedCart,
-        // totalItem:
       };
 
     case "CLEAR_CART":

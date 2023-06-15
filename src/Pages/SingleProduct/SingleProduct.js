@@ -14,7 +14,7 @@ const SingleProduct = () => {
   const { isSingleLoading, singleProduct, getSingleProduct, addToCart } =
     useProductContext();
   const { id } = useParams();
-
+  
   const [amount, setAmount] = useState(1);
 
   useEffect(() => {
