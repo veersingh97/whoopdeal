@@ -17,11 +17,11 @@ const FeaturesProducts = () => {
             curElem;
           return (
             <Link to={`/singleproduct/${id}` } key={id}>
-              <div className="card" >
+              <div className="product-card" >
                 <img
                   src={images[0]}
                   alt="product"
-                  className="feature-image"
+                  className="product-image"
                 ></img>
                 <h3 className="heading">{title}</h3>
                 <p className="discount">

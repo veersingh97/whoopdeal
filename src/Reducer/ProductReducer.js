@@ -158,12 +158,12 @@ const ProductReducer = (state, action) => {
       let { amount, product } = action.payload;
       state.totalItem = state.totalItem + amount;
 
-      let existingProduct = state.cart.find((curElem) => {
+      let existingProduct = state?.cart?.find((curElem) => {
         return curElem.id === product.id;
       });
 
       if (existingProduct) {
-        let updateProductAmount = state.cart.map((curElem) => {
+        let updateProductAmount = state?.cart?.map((curElem) => {
           if (curElem.id === existingProduct.id) {
             let newAmount = curElem.amount + amount;
             return {
@@ -201,7 +201,7 @@ const ProductReducer = (state, action) => {
     case "REMOVE_ITEM":
       let { id } = action.payload;
       let updatedCart;
-      updatedCart = state.cart.filter((curElem) => {
+      updatedCart = state?.cart?.filter((curElem) => {
         return curElem.id !== id;
       });
       return {
@@ -257,7 +257,7 @@ const ProductReducer = (state, action) => {
       };
 
     case "TOTAL_AMOUNT":
-      let totalOrderAmount = state.cart.reduce((previousValue, curElem)=>{
+      let totalOrderAmount = state?.cart?.reduce((previousValue, curElem)=>{
         return previousValue + (curElem.amount * curElem.price)
       },0)
       return {

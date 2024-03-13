@@ -9,7 +9,7 @@ const API = "https://dummyjson.com/products";
 
 const getLocalCartData = () => {
   let localCartData = localStorage.getItem("whoopCart");
-  if (localCartData.length === 0 || localCartData === undefined) {
+  if (localCartData?.length === 0 || localCartData === undefined || localCartData === null) {
     return [];
   } else {
     return JSON.parse(localCartData);
@@ -46,7 +46,7 @@ const DataProvider = ({ children }) => {
     dispatch({ type: "SET_LOADING" });
     try {
       const response = await axios.get(url);
-      const products = await response.data.products;
+      const products = await response?.data?.products;
       dispatch({ type: "SET_API_DATA", payload: products });
     } catch (error) {
       dispatch({ type: "API_ERROR" });
@@ -57,7 +57,7 @@ const DataProvider = ({ children }) => {
     dispatch({ type: "SET_LOADING" });
     try {
       const response = await axios.get(url);
-      const filterProducts = await response.data.products;
+      const filterProducts = await response?.data?.products;
       dispatch({ type: "SORTING_PRODUCTS", payload: filterProducts });
     } catch (error) {
       dispatch({ type: "API_ERROR" });
@@ -68,7 +68,7 @@ const DataProvider = ({ children }) => {
     dispatch({ type: "SET_SINGLE_LOADING" });
     try {
       const response = await axios.get(url);
-      const singleProduct = await response.data;
+      const singleProduct = await response?.data;
       dispatch({ type: "SET_SINGLE_PRODUCT", payload: singleProduct });
     } catch (error) {
       dispatch({ type: "SET_SINGLE_ERROR" });

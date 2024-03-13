@@ -19,7 +19,7 @@ const Cart = () => {
     shippingFee,
   } = useProductContext();
 
-  if (cart.length === 0) {
+  if (cart?.length === 0) {
     return (
       <div className="empty-cart">
         <h1>YOUR CART IS EMPTY</h1>
@@ -38,7 +38,7 @@ const Cart = () => {
         <hr />
 
         <div className="cart-margin">
-          {cart.map((curElem) => {
+          {cart?.map((curElem) => {
             const { amount: quantity, id, image, max, name, price } = curElem;
             return (
               <div className="cart-products" key={id}>
